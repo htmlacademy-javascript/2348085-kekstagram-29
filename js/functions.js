@@ -22,3 +22,4 @@ function extractNumber(str) {
         }
     return parseInt(matches.join(''), 10);
     }
+wefwefwefwefwegqercgqrfg
