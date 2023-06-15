@@ -46,7 +46,7 @@ function getRandomName() {
 
   return names[getRandomNumber(0, names.length - 1)];
 }
-
+const usedIds = [];
 function getRandomId() {
   let id = getRandomNumber(1, 160);
   while (usedIds.includes(id)) {
@@ -55,8 +55,6 @@ function getRandomId() {
   usedIds.push(id);
   return id;
 }
-
-const usedIds = [];
 
 const photosArray = [];
 
@@ -68,4 +66,3 @@ for (let i = 1; i <= 25; i++) {
   };
   photosArray.push(photo);
 }
-console.log(photosArray)
